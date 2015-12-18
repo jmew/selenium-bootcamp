@@ -1,4 +1,4 @@
-# Selenium-bootcamp
+# Selenium-Bootcamp
 
 This bootcamp serves as an introduction point into the Selenium framework. The Selenium framework works with multiple languages but in this guide, I will be using Python.
 
@@ -70,7 +70,7 @@ Test cases can be run in one of two ways.
  
 #####Challenge
 
-Try creating a test that navigates to google.ca
+Try creating a test that opens a browser and navigates to google.ca
 
 ## Task #2: Locating Elements
 
@@ -79,7 +79,7 @@ Try creating a test that navigates to google.ca
 [Selenium locating elements tutorial] (http://selenium-python.readthedocs.org/locating-elements.html) 
 
 ##### Objective:
-Navigate to google.ca
+Finding the search box
 
 #####Description:
 
