@@ -59,7 +59,7 @@ In Selenium, the method to go to a link is:
 
 where URL is the website url you want to navigate to.
 
-######Running your test case
+#####Running your test case
 
 Test cases can be run in one of two ways. 
 
@@ -67,8 +67,8 @@ Test cases can be run in one of two ways.
 2. From command line. Navigate to the directory of python file. Run the command:
 
     * Python (INSERT FILE NAME HERE).py
-    
-######Challenge
+ 
+#####Challenge
 
 Try creating a test that navigates to google.ca
 
