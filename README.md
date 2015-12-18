@@ -44,7 +44,10 @@ Create a new PyCharm project. In that project create a new python file. In that 
 Then define your web browser with the line:
 
     * driver = webdriver.Firefox()
-Note: Other browers are supported, you just need to download their specific webdrivers. Firefox just come supported out of the box
+    
+Note: Other browers are supported, you just need to download their specific webdrivers. Firefox just come supported out of the box. For example, if you wanted to add the Chrome browser, you would go download the Chrome webdriver (https://sites.google.com/a/chromium.org/chromedriver/downloads) and add it to your PATH. Then you can set the driver to be chrome with the line: 
+
+    * driver = webdriver.Chrome()
 
 ## Task #2: Navigating
 
