@@ -33,27 +33,50 @@ Software:
 3. Use Pip to install seleneium
 4. Navigate to google.ca
 
-#####Instructions:
+#####Installation:
 
 Using the links above, download all the necessary tools and install them onto your computer. Select all the text on the Pip link, and save that into a new file named get-pip.py. Then on your command line tool navigate to the directory of your get-pip.py file and run "Python get-pip.py". After pip is installed, navigate to your computers Python folder and go into the scripts folder (ex C:\Python27\Scripts) from command line. Then run the command pip "pip install selenium".
 
-Create a new PyCharm project. In that project create a new python file. In that file, make sure you import selenium into your project with the line:
+#####Starting your first project
+
+To start your first project, open PyCharm and select create a new PyCharm project. In that project create a new python file. In that file, make sure you import selenium into your project with the line:
 
     * from selenium import webdriver
 
 Then define your web browser with the line:
 
     * driver = webdriver.Firefox()
-    
+ 
 Note: Other browers are supported, you just need to download their specific webdrivers. Firefox just come supported out of the box. For example, if you wanted to add the Chrome browser, you would go download the Chrome webdriver (https://sites.google.com/a/chromium.org/chromedriver/downloads) and add it to your PATH. Then you can set the driver to be chrome with the line: 
 
     * driver = webdriver.Chrome()
 
-## Task #2: Navigating
+#####Navigating
+
+In Selenium, the method to go to a link is:
+
+    * driver.get(URL)
+
+where URL is the website url you want to navigate to.
+
+######Running your test case
+
+Test cases can be run in one of two ways. 
+
+1. From PyCharm. You can run the test in the IDE with the run button [[TODO FINISH]]
+2. From command line. Navigate to the directory of python file. Run the command:
+
+    * Python (INSERT FILE NAME HERE).py
+    
+######Challenge
+
+Try creating a test that navigates to google.ca
+
+## Task #2: Locating Elements
 
 ##### Useful  material and links: 
 
-[Selenium navigating tutorial] (http://selenium-python.readthedocs.org/navigating.html) 
+[Selenium locating elements tutorial] (http://selenium-python.readthedocs.org/locating-elements.html) 
 
 ##### Objective:
 Navigate to google.ca
@@ -63,7 +86,7 @@ Navigate to google.ca
 Main difference between two tools is that hierarchy viewer provides you with ENTIRE hierarchy, including items that are not visible (invisbile, gone), while uiatomatorviewer 
 shows only visible views. This discrepancy is important to remember as there is a fundamental difference between a view that doesn't exist and view that is not visible.
 
-## Task #3: Locating Elements On The Page
+## Task #3: Actions
 
 ##### Objective:
 Add a test that Changes the location in settings and verifies that the new location is saved in the settings
