@@ -83,17 +83,15 @@ Finding the search box
 
 #####Description:
 
-Main difference between two tools is that hierarchy viewer provides you with ENTIRE hierarchy, including items that are not visible (invisbile, gone), while uiatomatorviewer 
-shows only visible views. This discrepancy is important to remember as there is a fundamental difference between a view that doesn't exist and view that is not visible.
+Read the link above.
 
 ## Task #3: Actions
 
 ##### Objective:
-Add a test that Changes the location in settings and verifies that the new location is saved in the settings
+Make a google search
 
 #####Description:
-Same as #2 this task is just for exploring capabilities of out-of-the box features of espresso library.
-Please don't test anything other than UI. Only validate that settings accepted your change. Don't test network responses and data integrity.
+Lorem Ipsum
 
 ## Task #4: Waits
 
@@ -102,7 +100,6 @@ Add a pull to refresh test. Verify that snackbar is displayed.
 
 #####Description:
 Don't test anything other than snackbar.
-
 
 #Espresso Intermediate. Page Objects.
 
