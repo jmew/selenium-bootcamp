@@ -111,7 +111,19 @@ For example, if I want to click an element, I would use this line;
 
 Try creating a test that goes to google.ca and searches for "cat videos".
 
-## Task #4: Waits
+## Task #4: Unittests and Asserts
+
+##### Useful  material and links: 
+
+[Asserts Tutorail] (http://engineering.aweber.com/getting-started-with-ui-automated-tests-using-selenium-python/) 
+
+##### Objective:
+Assert that 1 equals 1
+
+#####Description:
+The unittest framework is 
+
+## Task #5: Waits
 
 ##### Useful  material and links: 
 
@@ -135,9 +147,13 @@ Note, a very useful method that I created is:
 
 It will wait for the element to be visible. And if it cannot find the element, it will print a nice error explaining which element could not be found.
 
-#Espresso Intermediate. Page Objects.
+#####Challenge
 
-## Task #5 Understanding Page Objects
+Try to create a test that runs a google search for "Google" and checks if the first result is google.ca
+
+#Selenium Intermediate. Page Objects.
+
+## Task #6 Understanding Page Objects
 
 ##### Useful  material and links: 
 
