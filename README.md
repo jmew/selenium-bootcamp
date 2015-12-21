@@ -2,7 +2,7 @@
 
 This bootcamp serves as an introduction point into the Selenium framework. The Selenium framework works with multiple languages but in this guide, I will be using Python.
 
-Bootcamp coverts majority of the common scenarios one might encounter while developing tests for web applications.
+This bootcamp coverts majority of the common scenarios one might encounter while developing tests for web applications.
 
 Fork this repo and request evaluation from QA members experienced in developing Espresso tests.
 
