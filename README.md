@@ -123,6 +123,10 @@ Assert that 1 equals 1
 #####Description:
 The unittest framework is 
 
+#####Challenge
+
+Try creating a test that asserts 1 equals 1
+
 ## Task #5: Waits
 
 ##### Useful  material and links: 
@@ -167,3 +171,7 @@ Create a page object
 Selenium code looks very messy. Also if the developers change the source code, it could break many of your tests. Page objects are a good tool to use to organize your code and make it more adaptable to changes.
 
 The concept behind Page Objects is to make each page an object. Such object will have methods that will do something on that page. For example, in a Sign In Page Object, it would have methods do to things on the page such as entering your user name, and entering your password. Then whenever you need to do something on the Sign In Page in your test, you could just call SignInPage.enterUsername("BillyBob"). This is much cleaner and more readable, and if the source code ever changes, you can easilly change the enterUsername method to fix all the instances of it.
+
+#####Challenge
+
+Try creating a page object for Google.ca, and make methods to enter your search and click the search button
