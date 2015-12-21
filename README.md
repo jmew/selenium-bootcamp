@@ -112,7 +112,7 @@ For example, if I want to click an element, I would use this line;
 
 Try creating a test that goes to google.ca and searches for "cat videos".
 
-## Task #4: Unittests and Asserts
+## Task #4: Unittest and Asserts
 
 ##### Useful material and links: 
 
@@ -122,7 +122,7 @@ Try creating a test that goes to google.ca and searches for "cat videos".
 Assert that 1 equals 1
 
 #####Description:
-The unittest framework is 
+The unittest framework is. It allows you to create each test case as a method and run them all individually. This makes tests much more organized as tests can now be grouped into similar categories. We can now also introduce the concept of asserts. An assert is a statement that 
 
 #####Challenge:
 
