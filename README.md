@@ -123,20 +123,15 @@ The most common function that I use is:
 
 #Espresso Intermediate. Page Objects.
 
-## Task #5 Understanding onData
+## Task #5 Understanding Page Objects
 
 ##### Useful  material and links: 
 
-[Advanced espresso guide] (https://google.github.io/android-testing-support-library/docs/espresso/advanced/index.html)
+[Page Object Documentation] (http://selenium-python.readthedocs.org/page-objects.html)
+[Page Object Example] (https://justin.abrah.ms/python/selenium-page-object-pattern--the-key-to-maintainable-tests.html)
 
 ##### Objective:
-Add a test that changes the  temperature units using onData()
+Create a page object
 
 #####Description:
-
-Whenever you encounter a list view in the hierarchy, this is an indication that onView() doesn't work here any more. onView will only work for items that are currently visible on the screen.
-However, if an item is off the screen onView will produce view not found exception and fail the test.
-onData doesn't take a view matcher, but instea it's looking for a data matcher, which matches the data in the adapter behind the ListView.
-Making assertions with onData will automatically scroll to the view if it's not displayed.
-
-Before starting the test investigate what kind of data the adapter holds in the unit selection dialog. You can write a failing test that will show you data type in the exception log.
+Selenium code looks very messy. Also if the developers change the source code, it could break many of your tests.
