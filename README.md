@@ -82,7 +82,6 @@ Try creating a test that opens a browser and navigates to google.ca
 Finding the search box
 
 #####Description:
-
 Read the link above.
 
 ## Task #3: Actions
@@ -91,7 +90,20 @@ Read the link above.
 Make a google search
 
 #####Description:
-Lorem Ipsum
+There are 3 main actions:
+1. Click (clicks an element on the page)
+2. Type (types text into a textbox on the page)
+3. Clear (clears the text in a textbox on the page)
+
+Click - .click()
+Type - .send_keys("TEXT TO BE TYPED")
+Clear - .clear()
+
+To perform one of these actions on an element, you first need to locate the element.
+
+For example, if I want to click an element, I would use this line;
+
+    driver.find_element_by_id("Example ID").click()
 
 ## Task #4: Waits
 
