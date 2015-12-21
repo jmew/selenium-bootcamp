@@ -41,21 +41,21 @@ Using the links above, download all the necessary tools and install them onto yo
 
 To start your first project, open PyCharm and select create a new PyCharm project. In that project create a new python file. In that file, make sure you import selenium into your project with the line:
 
-    * from selenium import webdriver
+    from selenium import webdriver
 
 Then define your web browser with the line:
 
-    * driver = webdriver.Firefox()
+    driver = webdriver.Firefox()
  
 Note: Other browers are supported, you just need to download their specific webdrivers. Firefox just come supported out of the box. For example, if you wanted to add the Chrome browser, you would go download the Chrome webdriver (https://sites.google.com/a/chromium.org/chromedriver/downloads) and add it to your PATH. Then you can set the driver to be chrome with the line: 
 
-    * driver = webdriver.Chrome()
+    driver = webdriver.Chrome()
 
 #####Navigating
 
 In Selenium, the method to go to a link is:
 
-    * driver.get(URL)
+    driver.get(URL)
 
 where URL is the website url you want to navigate to.
 
@@ -66,7 +66,7 @@ Test cases can be run in one of two ways.
 1. From PyCharm. You can run the test in the IDE with the run button [[TODO FINISH]]
 2. From command line. Navigate to the directory of python file. Run the command:
 
-    * Python (INSERT FILE NAME HERE).py
+    Python (INSERT FILE NAME HERE).py
  
 #####Challenge
 
@@ -100,6 +100,14 @@ Add a pull to refresh test. Verify that snackbar is displayed.
 
 #####Description:
 Don't test anything other than snackbar.
+
+The most common function that I use is:
+
+    def waitUntil(driver, timeout, matcher, key):
+    try:
+        return WebDriverWait(driver, timeout).until(EC.visibility_of_element_located((matcher, key)))
+    except TimeoutException:
+        raise NoSuchElementException("Matcher: '{}' Key: '{}' not found!".format(str(matcher), str(key)))
 
 #Espresso Intermediate. Page Objects.
 
