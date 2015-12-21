@@ -79,10 +79,10 @@ Try creating a test that opens a browser and navigates to google.ca
 [Selenium locating elements tutorial] (http://selenium-python.readthedocs.org/locating-elements.html) 
 
 ##### Objective:
-Finding the search box
+Learn about the different ways to locate elements on a web page
 
 #####Description:
-Read the link above.
+Read the link above. It does a good job explaining all the different locator methods and how to use them.
 
 To find attributes to find your element by, you can right click that element on the page, and click "inspect element". It should open up a new screen that displays all the information about that element, such as ID, Class Name, Tag Name, and other useful attributes.
 
@@ -113,19 +113,27 @@ Try creating a test that goes to google.ca and searches for "cat videos".
 
 ## Task #4: Waits
 
+##### Useful  material and links: 
+
+[Selenium Waits Tutorial] (http://selenium-python.readthedocs.org/waits.html) 
+
 ##### Objective:
-Add a pull to refresh test. Verify that snackbar is displayed.
+Get the results from a google search
 
 #####Description:
-Don't test anything other than snackbar.
+Most websites do not load right away. Many take an extra few seconds to load a page as it may be have to load other resources. This is why when you run driver.find_element_by on the page right after you request the page, it may give you an error as it cannot find the element on the page as it has not been loaded yet.
 
-The most common function that I use is:
+This is where waits come in. Waits will wait for the element you are looking for to be loaded before it applys an action to it. Read the link above to learn about the different conditions you can wait for.
+
+Note, a very useful method that I created is:
 
     def waitUntil(driver, timeout, matcher, key):
     try:
         return WebDriverWait(driver, timeout).until(EC.visibility_of_element_located((matcher, key)))
     except TimeoutException:
         raise NoSuchElementException("Matcher: '{}' Key: '{}' not found!".format(str(matcher), str(key)))
+
+It will wait for the element to be visible. And if it cannot find the element, it will print a nice error explaining which element could not be found.
 
 #Espresso Intermediate. Page Objects.
 
@@ -140,4 +148,6 @@ The most common function that I use is:
 Create a page object
 
 #####Description:
-Selenium code looks very messy. Also if the developers change the source code, it could break many of your tests.
+Selenium code looks very messy. Also if the developers change the source code, it could break many of your tests. Page objects are a good tool to use to organize your code and make it more adaptable to changes.
+
+The concept behind Page Objects is to make each page an object. Such object will have methods that will do something on that page. For example, in a Sign In Page Object, it would have methods do to things on the page such as entering your user name, and entering your password. Then whenever you need to do something on the Sign In Page in your test, you could just call SignInPage.enterUsername("BillyBob"). This is much cleaner and more readable, and if the source code ever changes, you can easilly change the enterUsername method to fix all the instances of it.
