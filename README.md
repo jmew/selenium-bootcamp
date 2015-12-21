@@ -25,7 +25,7 @@ Software:
 
 [Selenium setup instructions] (http://selenium-python.readthedocs.org/installation.html)
 
-[Pip] (https://bootstrap.pypa.io/get-pip.py)
+[PiP] (https://bootstrap.pypa.io/get-pip.py)
 
 ##### Objective:
 1. Install Python
@@ -37,7 +37,7 @@ Software:
 
 Using the links above, download all the necessary tools and install them onto your computer. Select all the text on the Pip link, and save that into a new file named get-pip.py. Then on your command line tool navigate to the directory of your get-pip.py file and run "Python get-pip.py". After pip is installed, navigate to your computers Python folder and go into the scripts folder (ex C:\Python27\Scripts) from command line. Then run the command pip "pip install selenium".
 
-#####Starting your first project
+#####Starting your first project:
 
 To start your first project, open PyCharm and select create a new PyCharm project. In that project create a new python file. In that file, make sure you import selenium into your project with the line:
 
@@ -51,7 +51,7 @@ Note: Other browers are supported, you just need to download their specific webd
 
     driver = webdriver.Chrome()
 
-#####Navigating
+#####Navigating:
 
 In Selenium, the method to go to a link is:
 
@@ -59,7 +59,7 @@ In Selenium, the method to go to a link is:
 
 where URL is the website url you want to navigate to.
 
-#####Running your test case
+#####Running your test case:
 
 Test cases can be run in one of two ways. 
 
@@ -68,7 +68,7 @@ Test cases can be run in one of two ways.
 
     Python (INSERT FILE NAME HERE).py
  
-#####Challenge
+#####Challenge:
 
 Try creating a test that opens a browser and navigates to google.ca
 
@@ -93,6 +93,7 @@ Make a google search
 
 #####Description:
 There are 3 main actions:
+
 1. Click (clicks an element on the page)
 2. Type (types text into a textbox on the page)
 3. Clear (clears the text in a textbox on the page)
@@ -107,15 +108,15 @@ For example, if I want to click an element, I would use this line;
 
     driver.find_element_by_id("Example ID").click()
 
-#####Challenge
+#####Challenge:
 
 Try creating a test that goes to google.ca and searches for "cat videos".
 
 ## Task #4: Unittests and Asserts
 
-##### Useful  material and links: 
+##### Useful material and links: 
 
-[Asserts Tutorail] (http://engineering.aweber.com/getting-started-with-ui-automated-tests-using-selenium-python/) 
+[Asserts Tutorial] (http://engineering.aweber.com/getting-started-with-ui-automated-tests-using-selenium-python/) 
 
 ##### Objective:
 Assert that 1 equals 1
@@ -123,7 +124,7 @@ Assert that 1 equals 1
 #####Description:
 The unittest framework is 
 
-#####Challenge
+#####Challenge:
 
 Try creating a test that asserts 1 equals 1
 
@@ -151,7 +152,7 @@ Note, a very useful method that I created is:
 
 It will wait for the element to be visible. And if it cannot find the element, it will print a nice error explaining which element could not be found.
 
-#####Challenge
+#####Challenge:
 
 Try to create a test that runs a google search for "Google" and checks if the first result is google.ca
 
@@ -172,6 +173,6 @@ Selenium code looks very messy. Also if the developers change the source code, i
 
 The concept behind Page Objects is to make each page an object. Such object will have methods that will do something on that page. For example, in a Sign In Page Object, it would have methods do to things on the page such as entering your user name, and entering your password. Then whenever you need to do something on the Sign In Page in your test, you could just call SignInPage.enterUsername("BillyBob"). This is much cleaner and more readable, and if the source code ever changes, you can easilly change the enterUsername method to fix all the instances of it.
 
-#####Challenge
+#####Challenge:
 
 Try creating a page object for Google.ca, and make methods to enter your search and click the search button
