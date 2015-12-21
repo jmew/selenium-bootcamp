@@ -84,6 +84,8 @@ Finding the search box
 #####Description:
 Read the link above.
 
+To find attributes to find your element by, you can right click that element on the page, and click "inspect element". It should open up a new screen that displays all the information about that element, such as ID, Class Name, Tag Name, and other useful attributes.
+
 ## Task #3: Actions
 
 ##### Objective:
@@ -104,6 +106,10 @@ To perform one of these actions on an element, you first need to locate the elem
 For example, if I want to click an element, I would use this line;
 
     driver.find_element_by_id("Example ID").click()
+
+#####Challenge
+
+Try creating a test that goes to google.ca and searches for "cat videos".
 
 ## Task #4: Waits
 
