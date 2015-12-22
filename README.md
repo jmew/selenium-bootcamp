@@ -1,15 +1,14 @@
 # Selenium-Bootcamp
 
-This bootcamp serves as an introduction point into the Selenium framework. The Selenium framework works with multiple languages but in this guide, I will be using Python.
+This bootcamp serves as an introduction point into the Selenium framework. The Selenium framework supports multiple languages, but in this guide, I will be using Python.
 
-This bootcamp coverts majority of the common scenarios one might encounter while developing tests for web applications.
+This bootcamp covers a majority of the common scenarios one might encounter while developing tests for web applications.
 
 Software:
 
     * PyCharm
     * Python 2.7
     * Selenium
-
 
 #Selenium Basics
 
@@ -37,11 +36,11 @@ Using the links above, download all the necessary tools and install them onto yo
 
 #####Starting your first project:
 
-To start your first project, open PyCharm and select create a new PyCharm project. In that project create a new python file. In that file, make sure you import selenium into your project with the line:
+To start your first project, open PyCharm and select create a new PyCharm project. In that project create a new python file. In that file, make sure you import selenium modules into your project with the line:
 
     from selenium import webdriver
 
-Then define your web browser with the line:
+WebDriver is the browser that Selenium will use. Then define your web browser with the line:
 
     driver = webdriver.Firefox()
  
