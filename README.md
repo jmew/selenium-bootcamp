@@ -94,17 +94,11 @@ Make a google search
 #####Description:
 There are 3 main actions:
 
-1. Click (clicks an element on the page)
-2. Type (types text into a textbox on the page)
-3. Clear (clears the text in a textbox on the page)
+1. Click (clicks an element on the page) - .click()
+2. Type (types text into a textbox on the page) - .send_keys("TEXT TO BE TYPED")
+3. Clear (clears the text in a textbox on the page) - .clear()
 
-Click - .click()
-Type - .send_keys("TEXT TO BE TYPED")
-Clear - .clear()
-
-To perform one of these actions on an element, you first need to locate the element.
-
-For example, if I want to click an element, I would use this line;
+To perform one of these actions on an element, you first need to locate the element. For example, if I want to click an element, I would use this line;
 
     driver.find_element_by_id("Example ID").click()
 
@@ -125,7 +119,7 @@ Assert that 1 equals 1
 #####Description:
 The unittest framework is. It allows you to create each test case as a method and run them all individually. This makes tests much more organized as tests can now be grouped into similar categories. We can now also introduce the concept of asserts. An assert is a statement that must be true and fails otherwise.
 
-Note in the unittest
+Please read the Unittest Tutorial and Asserts tutorial above. It explains how to implement the unittest framework into your test cases and how to structure your code around it.
 
 A reference to the Web Automation Style Guide can be viewed here https://docs.google.com/document/d/1VhsU2VEBw5eDzs8oEzk_t5bTXcXpwEo7_lR-4WLobHY/
 
