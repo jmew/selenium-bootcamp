@@ -167,8 +167,6 @@ Try to create a test that runs a google search for "Google" and asserts that the
 
 For a full list of Selenium's capabilities, please read through [WebDriver API] (http://selenium-python.readthedocs.org/api.html). There are a lot of useful functions you can apply to your tests such as screenshot tools.
 
-Also a really useful function to help you with debugging is "raw_input()". Basically, raw_input() is a psudo breakpoint for your code and will pause whenever it reaches the line. For example, if you want to find out why a certain line in your code is crashing, you could put a raw_input() before that line and try to debug what is wrong with that line.
-
 #Selenium Intermediate. Page Objects.
 
 ## Task #7 Understanding Page Objects
@@ -193,3 +191,8 @@ Try creating a page object for Google.ca, and make methods to enter your search 
 #Examples
 
 Look in this repository for test samples and a page object example.
+
+#Other Tips
+
+1. Also a really useful function to help you with debugging is "raw_input()". Basically, raw_input() is a psudo breakpoint for your code and will pause whenever it reaches the line. For example, if you want to find out why a certain line in your code is crashing, you could put a raw_input() before that line and try to debug what is wrong with that line.
+2. If you are writing tests to create accounts on a website, you will probably run into an error that you cannot use the same userid for each signup. A good work around is to use the current time in unix as your userid. This way, your userid will never be the same when you run your tests.
