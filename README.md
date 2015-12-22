@@ -111,6 +111,7 @@ Try creating a test that goes to google.ca and searches for "cat videos".
 ##### Useful material and links: 
 
 [Unittest Tutorial] (http://selenium-python.readthedocs.org/getting-started.html#using-selenium-to-write-tests)
+
 [Asserts Tutorial] (http://engineering.aweber.com/getting-started-with-ui-automated-tests-using-selenium-python/) 
 
 ##### Objective:
