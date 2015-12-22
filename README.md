@@ -4,8 +4,6 @@ This bootcamp serves as an introduction point into the Selenium framework. The S
 
 This bootcamp coverts majority of the common scenarios one might encounter while developing tests for web applications.
 
-Fork this repo and request evaluation from QA members experienced in developing Espresso tests.
-
 Software:
 
     * PyCharm
