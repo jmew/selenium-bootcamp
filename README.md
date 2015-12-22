@@ -98,6 +98,8 @@ To perform one of these actions on an element, you first need to locate the elem
 
     driver.find_element_by_id("Example ID").click()
 
+These are the main actions that you will be using in your tests. For a list of all actions, read below about the Webdriver API.
+
 #####Challenge:
 
 Try creating a test that goes to google.ca and searches for "cat videos".
@@ -112,10 +114,10 @@ Try creating a test that goes to google.ca and searches for "cat videos".
 
 ##### Objective:
 
-Learn about the unittest frameowkr and assert statements.
+Modify your code to use the unittest framework and use assert statements.
 
 #####Description:
-The unittest framework is. It allows you to create each test case as a method and run them all individually. This makes tests much more organized as tests can now be grouped into similar categories. We can now also introduce the concept of asserts. An assert is a statement that must be true and fails otherwise.
+The unittest framework is standard unit test framework for Python. It allows you to create each test case as a method, run them all individually and get information about each test run. This makes your tests much more organized as they can now be grouped into similar categories and placed in separate files. We can now also introduce the concept of asserts. An assert is a statement that must be true and fails otherwise. We can use asserts to verify things such as checking if elements on the page exist or checking if the current url is correct. Each test case should have at least one assert statement.
 
 Please read the Unittest Tutorial and Asserts tutorial above. It explains how to implement the unittest framework into your test cases and how to structure your code around it.
 
@@ -123,7 +125,7 @@ A reference to the Web Automation Style Guide can be viewed here https://docs.go
 
 #####Challenge:
 
-Try creating a test that asserts 1 equals 1
+Try creating a test that goes to google.ca and asserts that the current url is google.ca (Hint, there is a .current_url function in selenium)
 
 ## Task #5: Waits
 
@@ -135,7 +137,7 @@ Try creating a test that asserts 1 equals 1
 Get the results from a google search
 
 #####Description:
-Most websites do not load right away. Many take an extra few seconds to load a page as it may be have to load other resources or dependencies. This is why when you run driver.find_element_by on the page right after you request the page, it may give you an error as it cannot find the element on the page since the page has not been loaded yet.
+Most websites do not load right away. Many take an extra few seconds to load a page as it may be have to get other resources or dependencies. This is why when you run driver.find_element_by on the page right after you request the page, it may give you an error as it cannot find the element on the page since the page has not been loaded yet.
 
 This is where waits come in. Waits will wait for the element you are looking for to be loaded before it applys an action to it. Read the link above to learn about the different conditions you can wait for.
 
@@ -187,3 +189,7 @@ The concept behind Page Objects is to make each page an object. Such object will
 #####Challenge:
 
 Try creating a page object for Google.ca, and make methods to enter your search and click the search button
+
+#Examples
+
+Look in this repository for test samples and a page object example.
