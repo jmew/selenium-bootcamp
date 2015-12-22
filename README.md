@@ -159,7 +159,7 @@ When you use "waitUntil", it will wait for the element to be visible for the tim
 
 #####Challenge:
 
-Try to create a test that runs a google search for "Google" and checks if the first result is google.ca
+Try to create a test that runs a google search for "Google" and asserts that the first result is google.ca
 
 ## Task #6 More Selenium API
 
