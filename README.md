@@ -115,7 +115,8 @@ Try creating a test that goes to google.ca and searches for "cat videos".
 [Asserts Tutorial] (http://engineering.aweber.com/getting-started-with-ui-automated-tests-using-selenium-python/) 
 
 ##### Objective:
-Assert that 1 equals 1
+
+Learn about the unittest frameowkr and assert statements.
 
 #####Description:
 The unittest framework is. It allows you to create each test case as a method and run them all individually. This makes tests much more organized as tests can now be grouped into similar categories. We can now also introduce the concept of asserts. An assert is a statement that must be true and fails otherwise.
@@ -138,7 +139,7 @@ Try creating a test that asserts 1 equals 1
 Get the results from a google search
 
 #####Description:
-Most websites do not load right away. Many take an extra few seconds to load a page as it may be have to load other resources. This is why when you run driver.find_element_by on the page right after you request the page, it may give you an error as it cannot find the element on the page as it has not been loaded yet.
+Most websites do not load right away. Many take an extra few seconds to load a page as it may be have to load other resources or dependencies. This is why when you run driver.find_element_by on the page right after you request the page, it may give you an error as it cannot find the element on the page since the page has not been loaded yet.
 
 This is where waits come in. Waits will wait for the element you are looking for to be loaded before it applys an action to it. Read the link above to learn about the different conditions you can wait for.
 
@@ -150,7 +151,13 @@ Note, a very useful method that I created is:
     except TimeoutException:
         raise NoSuchElementException("Matcher: '{}' Key: '{}' not found!".format(str(matcher), str(key)))
 
-It will wait for the element to be visible. And if it cannot find the element, it will print a nice error explaining which element could not be found.
+The waitUntil function takes in:
+driver - the driver you are currently using
+timeout - the amount of seconds it should wait for (ex, 30)
+matcher - how you are locating the element (ex By.ID)
+key - the attribute you are using to look for the element (ex, "userId")
+
+When you use "waitUntil", it will wait for the element to be visible for the timeout length in seconds. And if it cannot find the element, it will print a nice error explaining which element could not be found.
 
 #####Challenge:
 
