@@ -116,13 +116,18 @@ Try creating a test that goes to google.ca and searches for "cat videos".
 
 ##### Useful material and links: 
 
+[Unittest Tutorial] (http://selenium-python.readthedocs.org/getting-started.html#using-selenium-to-write-tests)
 [Asserts Tutorial] (http://engineering.aweber.com/getting-started-with-ui-automated-tests-using-selenium-python/) 
 
 ##### Objective:
 Assert that 1 equals 1
 
 #####Description:
-The unittest framework is. It allows you to create each test case as a method and run them all individually. This makes tests much more organized as tests can now be grouped into similar categories. We can now also introduce the concept of asserts. An assert is a statement that 
+The unittest framework is. It allows you to create each test case as a method and run them all individually. This makes tests much more organized as tests can now be grouped into similar categories. We can now also introduce the concept of asserts. An assert is a statement that must be true and fails otherwise.
+
+Note in the unittest
+
+A reference to the Web Automation Style Guide can be viewed here https://docs.google.com/document/d/1VhsU2VEBw5eDzs8oEzk_t5bTXcXpwEo7_lR-4WLobHY/
 
 #####Challenge:
 
@@ -155,6 +160,12 @@ It will wait for the element to be visible. And if it cannot find the element, i
 #####Challenge:
 
 Try to create a test that runs a google search for "Google" and checks if the first result is google.ca
+
+## Task #6 More Selenium API
+
+#####Description:
+
+For a full list of Selenium's capabilities, please read through [WebDriver API] (http://selenium-python.readthedocs.org/api.html). There are a lot of useful functions you can apply to your tests such as screenshot tools.
 
 #Selenium Intermediate. Page Objects.
 
