@@ -150,10 +150,10 @@ Note, a very useful method that I created is:
         raise NoSuchElementException("Matcher: '{}' Key: '{}' not found!".format(str(matcher), str(key)))
 
 The waitUntil function takes in:
-driver - the driver you are currently using
-timeout - the amount of seconds it should wait for (ex, 30)
-matcher - how you are locating the element (ex By.ID)
-key - the attribute you are using to look for the element (ex, "userId")
+ * driver - the driver you are currently using
+ * timeout - the amount of seconds it should wait for (ex, 30)
+ * matcher - how you are locating the element (ex By.ID)
+ * key - the attribute you are using to look for the element (ex, "userId")
 
 When you use "waitUntil", it will wait for the element to be visible for the timeout length in seconds. And if it cannot find the element, it will print a nice error explaining which element could not be found.
 
