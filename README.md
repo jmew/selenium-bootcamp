@@ -11,7 +11,7 @@ Software:
     * Selenium
 
 
-#Selenium basics
+#Selenium Basics
 
 ## Task #1: Setup
 
