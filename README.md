@@ -45,7 +45,7 @@ Then define your web browser with the line:
 
     driver = webdriver.Firefox()
  
-Note: Other browers are supported, you just need to download their specific webdrivers. Firefox just come supported out of the box. For example, if you wanted to add the Chrome browser, you would go download the Chrome webdriver (https://sites.google.com/a/chromium.org/chromedriver/downloads) and add it to your PATH. Then you can set the driver to be chrome with the line: 
+Note: Other browers are supported, you just need to download their specific webdrivers. Firefox just naturally comes supported out of the box. For example, if you wanted to add the Chrome browser, you would go download the Chrome webdriver (https://sites.google.com/a/chromium.org/chromedriver/downloads) and add it to your PATH. Then you can set the driver to be chrome with the line: 
 
     driver = webdriver.Chrome()
 
@@ -61,10 +61,8 @@ where URL is the website url you want to navigate to.
 
 Test cases can be run in one of two ways. 
 
-1. From PyCharm. You can run the test in the IDE with the run button [[TODO FINISH]]
-2. From command line. Navigate to the directory of python file. Run the command:
-
-    Python (INSERT FILE NAME HERE).py
+1. From PyCharm: You can run the test in the IDE by right clicking your python file and clicking "Run"
+2. From command line: Navigate to the directory of python file. Run the command: "Python (INSERT FILE NAME HERE).py"
  
 #####Challenge:
 
@@ -167,9 +165,11 @@ Try to create a test that runs a google search for "Google" and checks if the fi
 
 For a full list of Selenium's capabilities, please read through [WebDriver API] (http://selenium-python.readthedocs.org/api.html). There are a lot of useful functions you can apply to your tests such as screenshot tools.
 
+Also a really useful function to help you with debugging is "raw_input()". Basically, raw_input() is a psudo breakpoint for your code and will pause whenever it reaches the line. For example, if you want to find out why a certain line in your code is crashing, you could put a raw_input() before that line and try to debug what is wrong with that line.
+
 #Selenium Intermediate. Page Objects.
 
-## Task #6 Understanding Page Objects
+## Task #7 Understanding Page Objects
 
 ##### Useful  material and links: 
 
